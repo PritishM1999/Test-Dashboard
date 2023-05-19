@@ -1,0 +1,160 @@
+/* .main-menu-tab{
+    float:right; 
+ }
+ 
+ .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+     color: #fff;
+     background-color: #337ab7 !important;
+ }
+ 
+ .nav .nav-item .nav-link {
+     display: block;
+     font-weight: 500;
+ }
+ 
+ .mtop-1{
+    margin-top: 0.7rem;
+ }
+ 
+ .box p {
+     margin-bottom: 0.1rem;
+ }
+ 
+ .shipping p{
+   margin-bottom: 0.1rem;
+ }
+ 
+ .text-bold {
+     font-weight: bolder;
+     color: #6b6f82;
+ }
+ 
+ .address p {
+     font-size: 14px;
+     color: #666;
+     margin-bottom: 0.2rem;
+ }
+ 
+ .h-50px {
+     height: 50px;
+ }
+ 
+ .table td, .table th {
+    border-bottom: 1px solid #e3ebf3 !important;
+ }
+ 
+ .confmt-20 {
+     margin-top: 20px;
+ }
+ 
+ .mt-10 {
+     margin-top: 10px;
+ }
+ 
+ .btn-download {
+     color: #666666;
+     background-color: #ffffff;
+     border-color: #585757;
+     font-size: 14px;
+     font-weight: 400;
+ }
+ 
+ .btn-info-invoice {
+     color: #fff;
+     background-color: #5bc0de;
+     border-color: #46b8da !important;
+ }
+ 
+ .btn-info-invoice:hover {
+     color: #fff !important;
+     background-color: #5bc0de !important;
+     border-color: #46b8da !important;
+ }
+ 
+ .btn1 {
+     display: inline-block;
+     padding: 10px 40px;
+     margin-bottom: 0;
+     font-size: 14px;
+     line-height: 1.42857143;
+     text-align: center;
+     white-space: nowrap;
+     vertical-align: middle;
+     -ms-touch-action: manipulation;
+     touch-action: manipulation;
+     cursor: pointer;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     background-image: none;
+     border: 2px solid #6e6e6e;
+     border-radius: 4px;
+     width: 100%;
+     -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out, background 0s,border 0s,-webkit-box-shadow .15s ease-in-out;
+     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out, background 0s,border 0s,-webkit-box-shadow .15s ease-in-out;
+     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out, background 0s,border 0s;
+     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out, background 0s,border 0s,-webkit-box-shadow .15s ease-in-out;
+ }
+
+ .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .bootstrap-select .dropdown-toggle:before {
+    content: '';
+    display: inline-block;
+  }
+
+
+  .bootstrap-select .dropdown-toggle .filter-option {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: inherit;
+    padding-right: inherit;
+    padding-bottom: inherit;
+    padding-left: inherit;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+  }
+
+  .card {
+    margin-bottom: 1.875rem;
+    border: none;
+    box-shadow: 0 2px 18px 1px rgba(49, 53, 72, .1);
+    border-radius: 0.45rem;
+    }
+
+    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+        width: 100% !important;
+    }
+
+
+    .picker .ant-calendar-range-part {
+        display: inline-block;
+        width: auto;
+      }
+      
+      .picker .ant-calendar-range-part-start .ant-calendar-date-input-wrap,
+      .picker .ant-calendar-range-part-end .ant-calendar-date-input-wrap {
+        display: inline-block;
+        width: 120px;
+      }
+
+    .input-group-append, .input-group-prepend {
+        display: none;
+    }
+
+    :where(.css-dev-only-do-not-override-ed5zg0).ant-picker .ant-picker-clear >* {
+        vertical-align: top;
+        display: none;
+    }
+      
+
+
+
+
+   */

@@ -1,0 +1,45 @@
+.main-menu-tab{
+   float:right; 
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #337ab7 !important;
+}
+
+.nav .nav-item .nav-link {
+    display: block;
+    font-weight: 500;
+}
+
+.mtop-1{
+   margin-top: 0.7rem;
+}
+
+.box p {
+    margin-bottom: 0.1rem;
+}
+
+.shipping p{
+  margin-bottom: 0.1rem;
+}
+
+.text-bold {
+    font-weight: bolder;
+    color: #6b6f82;
+}
+
+.address p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0.2rem;
+}
+
+.h-50px {
+    height: 50px;
+}
+
+.table td, .table th {
+   border-bottom: 1px solid #e3ebf3 !important;
+}
+

@@ -1,0 +1,12 @@
+/* @media screen (ma){
+    element.style {
+        inset: auto 0px 1px;
+        position: absolute;
+        max-height: 66px;
+        margin-top: 150px;
+    }
+
+    .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center, .apexcharts-legend.apx-legend-position-top.apexcharts-align-center {
+        justify-content: center;
+    }
+} */

@@ -1,0 +1,121 @@
+.page-header-main {
+    margin: -5px 0 10px;
+    border-bottom: 1px solid #bbbbbb;
+    padding: 10px 0;
+}
+
+.content-header {
+    color: #323234;
+    font-weight: 600;
+    padding-left: 0;
+}
+
+.content-header h1 {
+    font-size: 20px !important;
+    margin-bottom: 0;
+    font-weight: 600;
+    margin:0 !important;
+}
+
+.table-text tr td {
+    font-size: 12px;
+    color: #6b6f82;
+}
+
+.bg-dark-secondary {
+    background: #333 !important;
+    color: #c0c0c2  !important;
+}
+
+.p-button{
+   padding: 0 15px 15px !important; 
+}
+
+.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.progress {
+    height: 1.3rem;
+}
+
+.card-header:first-child {
+    border-radius: 0.45rem 0.45rem 0 0;
+    border-bottom: 1px solid #bfbcbc !important;
+}
+.table.table-sm td, .table.table-sm th {
+    padding: 0.6rem 1rem !important;
+}
+
+.name {
+    color: #6b6f82 !important;
+    font-size: 14px !important;
+}
+
+.border-box{
+  border: 1px solid #3333;
+  border-radius: 4px;  
+}
+
+.nav-pills .custom-link.active, .nav-pills .show>.nav-link {
+   color: #c0c0c2 !important;
+    background-color: #333333 !important;
+}
+
+.custom-link {
+    color: #6b6f82 !important;
+}
+
+.apexcharts-legend.apexcharts-align-center.apx-legend-position-bottom {
+    top:0 !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid #cdced1 !important;
+}
+
+.modal-footer {
+    border-top: 1px solid #cdced1 !important;
+}
+
+.mbottom-5{
+    margin-bottom:5px
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .06);
+    border-radius: 0.35rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.5rem !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.apexcharts-legend.apx-legend-position-bottom .apexcharts-legend-series, .apexcharts-legend.apx-legend-position-top .apexcharts-legend-series {
+    display: block;
+    align-items: center;
+    align-content: stretch;
+    inset: auto 0px 1px;
+    position: relative;
+    max-height: 225px;
+}
+
+.chart-wrapper {
+    display: block;
+  }
+  

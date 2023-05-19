@@ -1,0 +1,20 @@
+#todolist {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 280x; 
+    /* z-index: 9999; */
+  }
+  
+.custom-remove{
+    margin-left: 200px;
+}
+
+/* .cust-width{
+  width: 16rem
+}
+
+.cust-width2{
+ width: 6rem;
+} */
+  

@@ -1,0 +1,32 @@
+/* .apexcharts-legend.apx-legend-position-bottom .apexcharts-legend-series, .apexcharts-legend.apx-legend-position-top .apexcharts-legend-series {
+    display: block;
+    align-items: center;
+    align-content: stretch;
+    inset: auto 0px 1px;
+    position: relative;
+    max-height: 225px;
+} */
+
+.chart-container {
+    max-height: 400px;
+  }
+  
+
+.apexcharts-toolbar {
+    position: absolute;
+    z-index: 11;
+    max-width: 176px;
+    text-align: right;
+    border-radius: 3px;
+    padding: 0 6px 2px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.apexcharts-legend.apx-legend-position-bottom .apexcharts-legend-series, .apexcharts-legend.apx-legend-position-top .apexcharts-legend-series {
+    display: block;
+    align-items: center;
+}

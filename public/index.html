@@ -1,43 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html class="loading" lang="en" data-textdirection="ltr">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="./favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Web site created using create-react-app" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <title>Dashboard</title>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/ico/favicon.png">
+  <!-- linefontawesome -->
+  <!-- BEGIN:  fontawesom-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- END:  fontawesom-->
+  <!-- linefontawesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" />
+  <!--end linefontawesome -->
+
+  <!--font poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+  <!--end font poppins -->
+
+  <!-- BEGIN: Vendor CSS (using for icon, style ,color)-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/vendors.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-extended.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/vertical-menu.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/components.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./assets/css/vendors.min.css"> -->
+  <!--datatable -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/datatables.min.css">
+
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns  fixed-navbar" data-open="click" data-menu="vertical-menu"
+  data-col="2-columns">
+
+  <div id="root">
+
+
+
+  </div>
+
+
+</body>
+
+
+<!-- BEGIN: Vendor JS-->
+<!-- <script src="./assets/js/vendors.min.js"></script> -->
+<!-- BEGIN: Page Vendor JS-->
+<!-- <script src="./assets/js/chart.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"> </script> -->
+<!-- END: Page Vendor JS-->
+
+
+<!-- BEGIN: Theme JS-->
+<script src="./assets/js/app-menu.min.js"></script>
+<script src="./assets/js/app.min.js"></script>
+<!-- END: Theme JS-->
+
+<!-- data table js-->
+<!-- <script src="./assets/js/datatables.min.js"> </script> -->
+<!-- <script src="./assets/js/dataTables.responsive.min.js"> </script> -->
+<!--end data table js-->
+
+<!--Payment sent vs Payment Received-->
+
+<script>
+
+  var options = {
+    colors: ["#49C0F2", "#28C76F"],
+    chart: {
+      type: 'scatter',
+      height: 350,
+      zoom: {
+        enabled: false,
+        type: "xy"
+      },
+      toolbar: {
+        show: false
+      }
+    },
+    series: [
+      { name: 'Payment Sent', data: [500, 1500, 4000, 12000, 17000] },
+      { name: 'Payment Received', data: [1200, 1000, 12000, 5000, 12000] }
+    ],
+    xaxis: {
+      type: "category",
+      categories: ["Feb"],
+      labels: {
+        formatter: function (value, timestamp, index) {
+          return ["Feb", "beat 10%"];
+        },
+        style: {
+          fontSize: "10px"
+        }
+      },
+      tickAmount: 5,
+      tickPlacement: 'between'
+    },
+    yaxis: {
+      tickAmount: 7
+    },
+    markers: {
+      strokeWidth: 0,
+    },
+    legend: {
+      height: 30,
+    }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+  chart.render();
+
+
+</script>
+
+
+<!--sale vs purchase-->
+
+<script>
+
+  var barChartData = {
+    labels: [
+      "Feb",
+
+    ],
+    datasets: [
+      {
+        label: "Candidates",
+        backgroundColor: "pink",
+        borderColor: "red",
+        borderWidth: 1,
+        data: [10000, 7, 4, 6, 9, 7, 3]
+
+      },
+      {
+        label: "Companies",
+        backgroundColor: "lightblue",
+        borderColor: "blue",
+        borderWidth: 1,
+        data: [3000, 5, 6, 7, 3, 5, 6, 7]
+      }
+
+    ]
+  };
+
+  var chartOptions = {
+    responsive: true,
+    legend: {
+      position: "top"
+    },
+    title: {
+      display: true,
+      text: "Candidates Vs Companies"
+    },
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+
+  window.onload = function() {
+  var canvas = document.getElementById("canvas");
+  if (canvas) {
+    var ctx = canvas.getContext("2d");
+    window.myBar = new Chart(ctx, {
+      type: "bar",
+      data: barChartData,
+      options: chartOptions
+    });
+  } else {
+    console.error("Canvas element not found");
+    }
+  };
+
+  // window.onload = function () {
+  //   var ctx = document.getElementById("canvas").getContext("2d");
+  //   window.myBar = new Chart(ctx, {
+  //     type: "bar",
+  //     data: barChartData,
+  //     options: chartOptions
+  //   });
+  // };
+
+</script>
+
+
+<!-- onload popup -->
+
+<script>
+  $(document).ready(function () {
+    $('#infopopup').modal('show');
+  }); 
+</script>
+
+
+<script>
+  $(document).ready(function () {
+    $('#dtBasicExample').DataTable();
+    $('.dataTables_length').addClass('bs-select');
+  });
+</script>
+
+
+
+<!--show hide on checkbox-->
+<script>
+  $(function () {
+    $("#chekcategory").click(function () {
+      if ($(this).is(":checked")) {
+        $("#parentcategory").show();
+      } else {
+        $("#parentcategory").hide();
+      }
+    });
+  });
+</script>
+
 </html>

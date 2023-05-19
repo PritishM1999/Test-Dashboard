@@ -1,0 +1,132 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Roles = () => {
+    return (
+        <>
+            {/* // <!-- BEGIN: Content--> */}
+
+            <div className="app-content content">
+                <div className="content-wrapper">
+                    <div className="content-header row">
+                        <div className="content-header-left col-md-6 col-12 mb-1">
+                            <div className="row breadcrumbs-top">
+                                <div className="breadcrumb-wrapper col-12">
+                                    <ol className="breadcrumb">
+                                        <li className="breadcrumb-item"><Link href="index.php">Home</Link>
+                                        </li>
+                                        <li className="breadcrumb-item active">Role & Permissions
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section>
+                        <div className="content-body">
+                            <div className="row">
+                                <div className="col-12">
+                                    <div className="card">
+
+                                        <div className="card-header">
+                                            <div className="row">
+                                                <div className="col-md-6">
+                                                    <h4 className="card-title mt-1">
+                                                        Role & Permissions
+                                                    </h4>
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <div className="btn-group float-md-right">
+                                                        <Link href="add-roles-permissions.php" className="btn btn-info text-white" type="button"> Add New </Link>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="card-body">
+                                            <div className="table-responsive table-responsive1">
+                                                <table className="table table-hover table-bordered" id="dtBasicExample">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <label className="form-check-label form-check-label1">
+                                                                    <input type="checkbox" className="form-check-input" value="" />
+                                                                </label>
+                                                            </th>
+                                                            <th>Role</th>
+                                                            <th>Description</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <label className="form-check-label form-check-label1">
+                                                                    <input type="checkbox" className="form-check-input" value="" />
+                                                                </label>
+                                                            </td>
+
+
+                                                            <td>
+                                                                Sales
+                                                            </td>
+
+                                                            <td>
+                                                                Sales Permissions
+                                                            </td>
+
+                                                            <td>
+                                                                <div className="fontsize" role="group" aria-label="Button group with nested dropdown">
+                                                                    <Link className="dropdown-menu-right  px-2 mb-1" id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fa fa-ellipsis-v" aria-hidden="true"></i></Link>
+                                                                    <div className="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                                        <Link className="dropdown-item" href="edit-roles-permissions.php"><i className="fa fa-edit"></i> Edit</Link>
+                                                                        <Link className="dropdown-item" href="#"><i className="fa fa-trash"></i> Delete</Link></div>
+                                                                </div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <label className="form-check-label form-check-label1">
+                                                                    <input type="checkbox" className="form-check-input" value="" />
+                                                                </label>
+                                                            </td>
+
+
+                                                            <td>
+                                                                Purchases
+                                                            </td>
+
+                                                            <td>
+                                                                Purchases	 Permissions
+                                                            </td>
+
+                                                            <td>
+                                                                <div className="fontsize" role="group" aria-label="Button group with nested dropdown">
+                                                                    <Link className="dropdown-menu-right  px-2 mb-1" id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fa fa-ellipsis-v" aria-hidden="true"></i></Link>
+                                                                    <div className="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                                        <Link className="dropdown-item" href="edit-role-permission.php"><i className="fa fa-edit"></i> Edit</Link>
+                                                                        <Link className="dropdown-item" href="#"><i className="fa fa-trash"></i> Delete</Link></div>
+                                                                </div></td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            {/* // <!-- END: Content--> */}
+
+        </>
+    );
+};
+
+export default Roles;
